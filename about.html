@@ -12,6 +12,17 @@
 	border-bottom:1px solid rgb(212, 210, 210);
 	width:100%;
 	height:70px;
+	
+	
+
+}
+.nav2{
+	border-bottom:1px solid rgb(212, 210, 210);
+	width:100%;
+	height:70px;
+	background-color: white;
+	margin-left:-1%
+	
 }
 .new{
 	margin:1%;
@@ -65,13 +76,14 @@ font-family: "Roboto Condensed", sans-serif;
 	font-family: "Roboto Condensed", sans-serif;
 }
 .know{
-	border:0px solid rgb(212, 210, 210);
+	border:0px solid rgb(17, 15, 15);
 	
     font-size:40px;
 	width:70%;
 	height:38%;
-	color:#585858;
-	margin-left:40%
+	color:#0e0b0b;
+	margin-left:40%;
+	font-family: "Roboto Condensed", sans-serif;
 }
 .set{
 	border:0px solid rgb(212, 210, 210);
@@ -146,6 +158,110 @@ width:1.9%;
 justify-content: space-around;
 padding-left: 74%;
 }
+
+
+.sizeof{
+	font-size:25px;
+	font-family: "Roboto Condensed", sans-serif;
+	text-align: right;
+	margin-right:7%;
+	line-height:60px
+}
+
+
+
+
+		/* The Modal (background) */
+		.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  left:0%;
+  top:0%;
+  background-color: #fefefe;
+  width: 100%;
+  height:100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  font-family: 'Domine', serif;
+}
+
+/* The Close Button */
+.close {
+  color:rgb(17, 15, 15);
+ 
+  font-size: 28px;
+  
+  border :0px solid red;
+  margin-left:75%; 
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.modal-header {
+  padding: 2px 16px;
+
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;
+height:100%}
+
+.modal-footer {
+
+  padding: 2px 16px;
+  background-color: #eb182c;
+  color: white;
+
+}
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {right: -500px; opacity: 0} 
+  to {right: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {right: -500px; opacity: 0}
+  to {right: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,7 +284,7 @@ padding-left: 74%;
 		<div class = "cont">There is more than one way to earn on MPL. Refer the app to your friends and family and earn cash every time they join the app. So what are you waiting for? Download the app NOW and start winning!</div>
 	</div>
     <div class = "newcnt">
-		<div class = "know set">Know us</div>
+		<div class = "know set"><b>KNOW US</b></div>
 		<div class = "ima set">
 			<img class = "img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="">
 		<img class = "img2"  src="https://smallimg.pngkey.com/png/small/448-4486200_instagram-logo-circle.png" alt="">
@@ -205,5 +321,83 @@ padding-left: 74%;
 	</div>
 	<div class = "copy bm">	Copyright © Galactus Funware Technology Private Limited | All rights reserved</div>
 
+
+
+
+
+
+
+
+
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	
+	<div class="modal-content">
+	  <div class="modal-header">
+		  
+		  <div class = "nav2">
+			<div class ="new">
+				<img class = "mplpic" src="https://about.mpl.live/wp-content/uploads/2019/04/MPL_Logo-300x63.png" alt="">
+				<span class="close">&times;</span>
+			</div>
+		</div>
+		
+		 
+	  </div>
+	  <div class="modal-body"style="font-size:20px ; font-family: 'Domine', serif;   background-color: #eb182c;;color:white;">
+		  <div >
+			 <div class = "sizeof" >ABOUT</div>
+			 <div  class = "sizeof" >RETURN,REFUND & CANCELLATION POLICY</div>
+			 <div  class = "sizeof" >PRIVACY POLICY</div>
+			 <div  class = "sizeof" >GAME OF SKILLS AND SAFETY PRECAUTIONS FOR RESPONSIBLE GAMING</div>
+			 <div  class = "sizeof" >TERMS AND CONDITION OF USE</div>
+
+		  </div>
+		
+		
+	  </div>
+	  
+  <div class ="placeorder1" >
+	  
+	  
+	</div>
+	  
+	</div>
+  
+  </div>
+  
 </body>
 </html>
+<script>
+	// Get the modal
+var modal = document.getElementById("myModal");
+	
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+	
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+	
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+	
+</script>
